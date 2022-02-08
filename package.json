@@ -38,8 +38,8 @@
   },
   "dependencies": {
     "@nodertc/datachannel": "^1.0.0",
-    "@nodertc/dtls": "^0.6.0-0",
-    "@nodertc/sctp": "^0.1.0",
+    "@nodertc/dtls": "github:felixdrp/dtls",
+    "@nodertc/sctp": "github:felixdrp/sctp",
     "internal-ip": "^3.0.1",
     "is-dtls": "^2.0.0",
     "pem-file": "^1.0.0",
