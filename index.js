@@ -192,7 +192,7 @@ class Session extends Emitter {
       const addr = await dns.lookup(candidate.ip)
         .catch(console.log)
 
-      if (addr.family == 4) {
+      if (!!addr && addr.family == 4) {
         this.appendCandidate(addr.address, port, priority);
         this.emit('candidate');
       }
